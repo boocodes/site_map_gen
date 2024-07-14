@@ -21,7 +21,7 @@ class PromoDays implements PromoDaysInterface
      */
     public function __construct($goalYear)
     {
-        if ($goalYear < 2000) {
+        if ($goalYear < 2001) {
             throw  new ErrorGoalYearException("Error, goal year must be less than 2000\n");
         }
         $this->goalYear = $goalYear;
@@ -94,7 +94,7 @@ class PromoDays implements PromoDaysInterface
         if (!isset($this->goalYear)) {
             throw new ErrorGoalYearException();
         }
-        for ($year = self::START_YEAR; $year <= $this->goalYear; $year++) {
+        for ($year = self::START_YEAR; $year < $this->goalYear; $year++) {
             for ($month = 1; $month <= self::MONTH_COUNT; $month++) {
                 for ($day = 1; $day <= 31; $day++) {
                     if (date("w", mktime(0, 0, 0, $month, $day, $year)) == self::FRIDAY_AS_INT) {
