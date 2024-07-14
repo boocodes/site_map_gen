@@ -56,9 +56,9 @@ class PromoDays implements PromoDaysInterface
             case 5:
                 return 'май';
             case 6:
-                return 'июнь';
+                return 'июня';
             case 7:
-                return 'июль';
+                return 'июля';
             case 8:
                 return 'авг.';
             case 9:
@@ -121,9 +121,9 @@ class PromoDays implements PromoDaysInterface
     }
 
     // second method for faster calculating
-    public function calculate_fast()
-    {
-
-    }
+//    public function calculate_fast()
+//    {
+//
+//    }
 
 }
