@@ -1,0 +1,9 @@
+{
+  "autoload": {
+    "psr-4": {
+      "Classes\\": "src/classes/",
+      "Exceptions\\": "src/exceptions/",
+      "Interfaces\\": "src/interfaces/"
+    }
+  }
+}
